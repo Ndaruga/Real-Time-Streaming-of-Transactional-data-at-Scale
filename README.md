@@ -18,4 +18,15 @@ Real time streaming of fake transactional data at scale by Integrating Apache Fl
     ```
     docker compose up -d
     ```
-3. 
+3. Next, You need to set up **Apache Flink**
+   *    Apache Flink will run on all UNIX systems including MacOS. If you are on Windows, It is advisable to install Windows Subsystem for Linux (WSL) from Microsoft.
+   *    You need to have Java 11 installed in your system. You can check the java version by running the command
+           ```
+               java --version
+           ```
+   *    Download the [latest binary release of Flink](https://flink.apache.org/downloads.html), then extract the archive:
+           ```
+               tar -xzf flink-*.tgz
+           ```
+       
+       
