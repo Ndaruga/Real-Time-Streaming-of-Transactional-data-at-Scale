@@ -42,3 +42,15 @@ Real time streaming of fake transactional data at scale by Integrating Apache Fl
         ./bin/stop-cluster.sh
         ```
 
+### Setting up the Flink project.
+At the time of doing this project, only two [IDEs support by Apache Flink](https://nightlies.apache.org/flink/flink-docs-release-1.14/docs/flinkdev/ide_setup/) i.e
+*    [InteliJ IDEA](https://www.jetbrains.com/idea/download/)
+*    [PyCharm](https://www.jetbrains.com/pycharm/download/)
+
+This is is because flink is a framework and IDEs such as Visual Studio code are built for language support, code debugging and not the complexities of frameworks
+
+For this project we will use `InteliJ IDEA`. Create a new `Maven project` in InteliJ and ensure you configure the project as follows
+
+<img width="792" alt="Screenshot 2024-04-02 at 11 42 44 PM" src="https://github.com/Ndaruga/Real-Time-Streaming-of-Transactional-data-at-Scale/assets/68260816/1ca775e2-1940-44fd-a89d-76997d6c56c8">
+
+
