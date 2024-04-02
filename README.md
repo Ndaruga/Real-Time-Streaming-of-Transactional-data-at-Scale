@@ -18,15 +18,27 @@ Real time streaming of fake transactional data at scale by Integrating Apache Fl
     ```
     docker compose up -d
     ```
-3. Next, You need to set up **Apache Flink**
+3. Next, You need to set up **Apache Flink** preferably version 1.18.* for this project
    *    Apache Flink will run on all UNIX systems including MacOS. If you are on Windows, It is advisable to install Windows Subsystem for Linux (WSL) from Microsoft.
-   *    You need to have Java 11 installed in your system. You can check the java version by running the command
+   *    You need to have `Java 11` installed in your system. You can check the java version by running the command
            ```
            java --version
            ```
    *    Download the [latest binary release of Flink](https://flink.apache.org/downloads.html), then extract the archive:
            ```
-           tar -xzf flink-*.tgz
+           tar -xvf flink-<flink version>.tgz
            ```
        
-       
+   *    To test if your Flink cluster is running locally, navigate to the extracted flink folder run the command
+         ```
+         ./bin/start-cluster.sh
+         ```
+         Once the cluster has started, you can view the flink dashboard [http://localhost:8081](http://localhost:8081) and you should see a dashboard such as this
+
+        <img width="1200" alt="Screenshot 2024-04-02 at 10 47 43 PM" src="https://github.com/Ndaruga/Real-Time-Streaming-of-Transactional-data-at-Scale/assets/68260816/0d43ecde-d5a7-416a-9a18-1e023acf55fb">
+
+        To stop the cluster run
+        ```
+        ./bin/stop-cluster.sh
+        ```
+
